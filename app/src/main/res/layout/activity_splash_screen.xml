@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kd.ata.splash_screen"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:paddingBottom="30dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/antithefthome"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Textview_style_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="@string/anti_theft_detection" />
+
+    <ProgressBar
+        android:id="@+id/pb2"
+        android:padding="20dp"
+        android:indeterminateTint="#ffffff"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

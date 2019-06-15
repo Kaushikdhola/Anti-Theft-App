@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.kd.ata.Settinng">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="SETTING"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+
+        <Button
+        android:id="@+id/b1"
+        android:text="Fordet password"
+            android:onClick="forget_password"
+            style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+            />
+
+    <Button
+        android:id="@+id/b2"
+        android:text="Change password"
+        style="@style/button_style"
+        android:onClick="Change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <Button
+        android:id="@+id/b5"
+        android:text="Logout"
+        style="@style/button_style"
+        android:onClick="logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+        android:id="@+id/hideappdes"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Your Hide App Password is 12345"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical"
+    tools:context="com.example.kd.ata.Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            app:srcCompat="@drawable/adduser"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/textview_style"
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/register" />
+
+        <EditText
+            style="@style/editText_style1"
+            android:id="@+id/editText1"
+            android:hint="@string/email"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent" />
+
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/editText_style1"
+            android:layout_width="match_parent"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/editText_style1"
+            android:layout_width="match_parent"
+            android:hint="@string/alternate_number"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <EditText
+
+            android:id="@+id/editText2"
+            style="@style/editText_style1"
+            android:layout_width="match_parent"
+            android:hint="@string/password_register"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editText3"
+            style="@style/editText_style1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:onClick="signup"
+            android:text="@string/register_button" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textview_style"
+            android:text="@string/already_have_account_login"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="100dp"
+        android:paddingTop="48dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="10dp"
+        tools:ignore="UselessParent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/imsi"
+            style="@style/button_styleimsi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="189dp"
+            android:layout_weight="0.01"
+            android:onClick="getimsi"
+            android:text="imsi" />
+    </LinearLayout>>
+</RelativeLayout>

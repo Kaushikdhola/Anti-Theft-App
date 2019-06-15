@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:paddingBottom="55dp"
+    android:paddingTop="60dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:orientation="vertical"
+    tools:context="com.example.kd.ata.loginpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent"
+        android:weightSum="1">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="166dp"
+            android:layout_height="186dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:contentDescription=""
+            app:srcCompat="@drawable/user"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textview_style"
+            android:textSize="21sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in" />
+
+        <EditText
+            style="@style/editText_style1"
+            android:id="@+id/editText1"
+            android:hint="@string/email"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent" />
+
+        <EditText
+            style="@style/editText_style1"
+            android:id="@+id/editText2"
+
+            android:hint="@string/password"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:layout_width="match_parent" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:onClick="logIn"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password_login" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/textView2"
+
+            style="@style/textview_style"
+
+            android:text="@string/not_a_member_sign_up"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
